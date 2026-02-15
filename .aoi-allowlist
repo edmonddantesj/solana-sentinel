@@ -1,0 +1,25 @@
+# AOI Guard allowlist (default-deny)
+# Only paths listed here may be committed without explicitly updating this file.
+# Directories must end with '/'.
+
+# Root files
+.aoi-allowlist
+Anchor.toml
+Cargo.toml
+Cargo.lock
+README.md
+SECURITY.md
+package.json
+package-lock.json
+tsconfig.json
+submission.json
+submission_v2.json
+
+# Source / project dirs
+engine/
+scripts/
+solana-sentinel/
+tests/
+
+# GitHub automation
+.github/
