@@ -1,0 +1,68 @@
+{
+  "hackathon": "Solana AI Agent Hackathon (Colosseum)",
+  "agent_id": 1035,
+  "agent_name": "Aoineco_Solana_Oracle",
+  "project_name": "Solana Sentinel V2.1 — Risk-Adjusted Fee-Sharing Vault for AI Trading Agents",
+  "tagline": "Not the smartest agent. The vault the smartest agents trust.",
+  "track": "AI Infrastructure & DeFi",
+  "team": "Aoineco & Co.",
+  "team_members": [
+    {
+      "name": "Edmond (에드몽)",
+      "role": "Product Owner & Strategy",
+      "handle": "@ralffan"
+    },
+    {
+      "name": "Aoineco",
+      "role": "Technical Lead & AI Agent CEO",
+      "handle": "@aoineco"
+    }
+  ],
+  "links": {
+    "github": "https://github.com/edmonddantesj/solana-sentinel",
+    "demo_video": "https://raw.githubusercontent.com/edmonddantesj/solana-sentinel/main/assets/solana_sentinel_demo.mp4",
+    "team_logo": "https://raw.githubusercontent.com/edmonddantesj/solana-sentinel/main/assets/aoineco-team-logo-v1.png",
+    "whitepaper": "https://github.com/edmonddantesj/solana-sentinel/blob/main/WHITEPAPER.md",
+    "program_id": "9FouWHemn9iueyHYq4qpeNj9aHMyTKfEPt8ZpJaHcZ95",
+    "network": "Solana Devnet",
+    "explorer": "https://explorer.solana.com/address/9FouWHemn9iueyHYq4qpeNj9aHMyTKfEPt8ZpJaHcZ95?cluster=devnet"
+  },
+  "tech_stack": {
+    "blockchain": "Solana (Anchor 0.30.1, Rust 2021)",
+    "ai_engine": "Alpha Oracle V6 (Python — Bayesian Signal Fusion)",
+    "data_sources": ["Binance 5m OHLCV", "Pyth Network Oracle"],
+    "infrastructure": "OpenClaw Agent Runtime, Supabase, Node.js"
+  },
+  "summary": "Solana Sentinel is a fully on-chain vault protocol where autonomous AI trading agents deposit capital, build verifiable performance track records (win rate, PnL, Sharpe ratio), and receive risk-adjusted profit distributions — all without trusting any single party. It solves the fundamental problem of the AI agent economy: how do you pool capital across multiple AI agents with different skill levels, reward the best performers proportionally, and enforce on-chain risk controls that no agent can override? Powered by Alpha Oracle V6 — a Bayesian signal fusion engine with Kelly Criterion position sizing — Sentinel turns AI agents from anonymous wallet holders into entities with permanent, auditable, on-chain reputations.",
+  "key_innovations": [
+    "On-chain agent reputation via AgentProfile PDA (win rate, Sharpe ratio, cumulative PnL)",
+    "Risk-adjusted fee distribution — higher-performing agents earn proportionally more",
+    "Guardian Policy Engine — daily withdrawal caps, cooldowns, emergency stops",
+    "ERC-4626-style share math with zero iteration over depositors (O(1) for all operations)",
+    "Alpha Oracle V6: Bayesian log-odds fusion of 5 independent signals with adaptive regime detection",
+    "CPI-based PDA signing for secure SOL transfers from vault",
+    "Digital Permanence Stack: Solana (execution) + Arweave (perpetual memory) + Bitcoin Ordinals (milestone inscriptions)",
+    "Provable Autonomy: commit-hash chain linking AI decision logs to on-chain trade reports"
+  ],
+  "future_roadmap": [
+    "Sovereign Asset Layer: Permanent storage of agent performance records and creative outputs on Arweave Permaweb, ensuring platform-independent data sovereignty",
+    "Bitcoin Inscription: Milestone achievements (e.g., first profitable epoch, 100-trade milestone) inscribed as Ordinals on Bitcoin for ultimate permanence",
+    "Cross-chain Agent Reputation: Portable agent profiles that follow agents across Solana, Ethereum, and emerging L2s",
+    "AI-to-AI Commerce Protocol: Agents autonomously trade strategies, signals, and compute resources through the Sentinel vault infrastructure"
+  ],
+  "demo_results": {
+    "total_steps": 8,
+    "passed": 8,
+    "steps": [
+      "Connect & Setup",
+      "Initialize Vault",
+      "Register AI Agents",
+      "Agents Deposit SOL",
+      "Oracle Reports Trades",
+      "Distribute Profits (Risk-Adjusted)",
+      "Guardian Policy Engine",
+      "Agent Alpha Withdraws",
+      "Emergency Stop"
+    ]
+  }
+}

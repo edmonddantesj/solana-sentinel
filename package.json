@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@elizaos/openclaw-adapter": "^0.1.0",
+    "@elizaos/plugin-evm": "^1.0.13",
+    "@elizaos/plugin-solana": "^1.2.6",
+    "@limitless-exchange/sdk": "^1.0.2",
+    "ethers": "^6.16.0"
+  }
+}

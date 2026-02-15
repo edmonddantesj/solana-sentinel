@@ -1,0 +1,14 @@
+node_modules/
+target/
+.DS_Store
+.env
+
+# Voice samples (keep only final demo video)
+assets/frames/
+assets/*.mp3
+*.mp3
+!assets/solana_sentinel_demo.mp4
+
+# Rust build artifacts
+**/target/
+solana-sentinel/target/
