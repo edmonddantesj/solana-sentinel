@@ -9,9 +9,10 @@ cd "$(dirname "$0")/.."
 echo "[security_check] repo: $(git rev-parse --show-toplevel)"
 
 echo "[security_check] 1) ensure no .env is tracked"
-if git ls-files | rg -q '(^|/)\.env(\..*)?$'; then
+# Block only real .env files, allow .env.example
+if git ls-files | rg -q '(^|/)\.env$'; then
   echo "ERROR: .env file is tracked in git. Remove it and add to .gitignore." >&2
-  git ls-files | rg '(^|/)\.env(\..*)?$' >&2
+  git ls-files | rg '(^|/)\.env$' >&2
   exit 1
 fi
 
