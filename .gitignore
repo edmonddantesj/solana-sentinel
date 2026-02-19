@@ -12,3 +12,8 @@ assets/*.mp3
 # Rust build artifacts
 **/target/
 solana-sentinel/target/
+
+# AOI state (local-only)
+aoi-core/state/approvals/
+aoi-core/state/proofs/
+aoi-core/state/ci_artifacts/
