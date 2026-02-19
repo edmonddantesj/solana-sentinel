@@ -23,3 +23,8 @@ tests/
 
 # GitHub automation
 .github/
+
+# AOI security gate (CI + local)
+.gitignore
+aoi-core/
+aoi_core/
